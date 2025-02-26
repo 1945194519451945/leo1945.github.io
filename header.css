@@ -1,0 +1,35 @@
+.header {
+  padding: 40px 20px; /*desgruda todos os itens do cabeçalho das margens*/
+  display: flex;
+  justify-content: space-between; /*faz com que os itens se distanciem o máximo na tela*/
+  align-items: center;
+}
+.header-menu {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+/*serve para que os itens se quebrem caso a tela diminua*/
+.header-menu a /*falando apenas com os links dentro de header-menu*/ {
+  text-decoration: none;
+  font-size: 1.125rem;
+  padding: 10px 20px;
+  color: #141414;
+  display: block;
+}
+.header-menu a:hover {
+  color: #707070;
+}
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .header a {
+    background: #f5f5f5;
+  }
+}
+.header h1 {
+  font-size: 3rem;
+}

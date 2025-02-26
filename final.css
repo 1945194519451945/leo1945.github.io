@@ -1,0 +1,30 @@
+.final {
+  background: #000000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.final h3 {
+  color: #cccccc;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 140px;
+}
+.final ul {
+  font-size: 36px;
+  line-height: 40px;
+  color: white;
+  margin: 120px 0px 0px 80px;
+}
+@media (max-width: 800px) {
+  .final .h3 {
+    font-size: 4.5rem;
+    color: rgb(255, 255, 255);
+  }
+  .final {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .final ul {
+    margin-bottom: 50px;
+  }
+}

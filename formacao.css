@@ -1,0 +1,81 @@
+.formacao {
+  background: #141414;
+  color: white;
+}
+.formacao-container {
+  max-width: 1300px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.subtitulo-formacao {
+  font-size: 9rem;
+  color: #000000;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+.h3 {
+  color: #8f8f8f;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  position: relative;
+}
+.cursoshoras {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  margin: 10px 10px 10px 0px;
+}
+.formacaoitem h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(/img/cursos.svg) no-repeat center center;
+  position: relative;
+  top: 20px;
+  left: -28px;
+}
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(/img/detalhe.svg);
+  position: absolute;
+  z-index: 1;
+  bottom: -50px;
+}
+.formacaoitem {
+  align-content: center;
+}
+
+@media (max-width: 800px) {
+  .formacao .subtitulo-formacao {
+    font-size: 4.5rem;
+    color: black;
+    max-width: initial;
+  }
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .formacaoitem ul {
+    margin-bottom: 150px;
+  }
+  .formacaoitem h3::before {
+    margin-bottom: 20px;
+    margin-left: 27px;
+  }
+}
+.subtitulo-formacao:hover {
+  color: #70da1c;
+}

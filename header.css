@@ -6,7 +6,7 @@
 }
 .header-menu {
   display: flex;
-  gap: 10px;
+  gap: 11px;
   flex-wrap: wrap;
 }
 /*serve para que os itens se quebrem caso a tela diminua*/

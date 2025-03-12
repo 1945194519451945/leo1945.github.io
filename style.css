@@ -4,3 +4,7 @@
 @import "/experiencia.css";
 @import "/formacao.css";
 @import "/final.css";
+
+.nature {
+  font-size: 1rem;
+}
